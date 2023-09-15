@@ -337,7 +337,7 @@ curl_setopt_array($curls, array(
   ]
 }',
   CURLOPT_HTTPHEADER => array(
-    'Authorization: Basic cGFzY2FsOktpZ2FsaUAyMDIw',
+    'Authorization: Basic xxxxxxx',
     'Content-Type: application/json'
   ),
 ));
