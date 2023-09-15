@@ -1,0 +1,654 @@
+<?php
+include("dbcon.php");
+
+$cur_month=date('m', strtotime('last month'));
+$cur_year=date("Y");
+//$periodid=$cur_year.$cur_month;
+$periodid="202305";
+//$dates=date("Y-m-d");
+$dates="2023-05-20";
+$query_orgs=mysqli_query($conn," select * from tbl_orgunit");
+while($orgsrows=mysqli_fetch_array($query_orgs))
+{
+
+$orgUnit=$orgsrows["codes"];
+
+ $dl_wf7HrAnSFk1_yxyNpRFFT50="";
+ $dl_wf7HrAnSFk1_wFJYeroJT6C="";
+ $dl_wf7HrAnSFk1_JPcBzU4Z97x="";
+  $dl_wf7HrAnSFk1_RfmlLqePpei="";
+
+  $dl_GXQaAVsnddr_yxyNpRFFT50="";
+  $dl_GXQaAVsnddr_wFJYeroJT6C="";
+  $dl_GXQaAVsnddr_JPcBzU4Z97x="";
+  $dl_GXQaAVsnddr_RfmlLqePpei="";
+  
+  $dl_VkQdXK52Pzr_yxyNpRFFT50="";
+  $dl_VkQdXK52Pzr_wFJYeroJT6C="";
+  $dl_VkQdXK52Pzr_JPcBzU4Z97x="";
+  $dl_VkQdXK52Pzr_RfmlLqePpei="";
+  
+  
+  $dl_vNqUnUYyu7f_yxyNpRFFT50="";
+  $dl_vNqUnUYyu7f_wFJYeroJT6C="";
+  $dl_vNqUnUYyu7f_JPcBzU4Z97x="";
+  $dl_vNqUnUYyu7f_RfmlLqePpei="";
+  
+  $dl_wwtV53Uw1dR_fEAAWGsBGBl="";
+  $dl_wwtV53Uw1dR_NiX6gQUV6zb="";
+   $dl_wwtV53Uw1dR_xYVmfbB08tt="";
+   $dl_wwtV53Uw1dR_DQFYBKLmvYg="";
+   $dl_wwtV53Uw1dR_EpTAIpLor4P="";
+   $dl_wwtV53Uw1dR_JFCztM7aJ3E="";
+   
+   $dl_zFS1LQpnZVg_fEAAWGsBGBl="";
+   $dl_zFS1LQpnZVg_NiX6gQUV6zb="";
+    $dl_zFS1LQpnZVg_xYVmfbB08tt="";
+	$dl_zFS1LQpnZVg_DQFYBKLmvYg="";
+	$dl_zFS1LQpnZVg_EpTAIpLor4P="";
+	$dl_zFS1LQpnZVg_JFCztM7aJ3E="";
+	
+	$dl_TSvdKpV3GKZ_fEAAWGsBGBl="";
+    $dl_TSvdKpV3GKZ_NiX6gQUV6zb="";
+	$dl_TSvdKpV3GKZ_xYVmfbB08tt="";
+	$dl_TSvdKpV3GKZ_DQFYBKLmvYg="";
+	$dl_TSvdKpV3GKZ_EpTAIpLor4P="";
+	 $dl_TSvdKpV3GKZ_JFCztM7aJ3E="";
+	 
+	 $dl_s111WRt36gi_fEAAWGsBGBl="";
+	 $dl_s111WRt36gi_NiX6gQUV6zb="";
+	 $dl_s111WRt36gi_xYVmfbB08tt="";
+	 $dl_s111WRt36gi_DQFYBKLmvYg="";
+	 $dl_s111WRt36gi_EpTAIpLor4P="";
+	 $dl_s111WRt36gi_JFCztM7aJ3E="";
+	
+   
+   
+  
+$query_record=mysqli_query($conn," select * from tbl_fbfintegrationlivedata where orgcode='$orgUnit' and periodid='$periodid' ");
+
+while($rows=mysqli_fetch_array($query_record))
+{
+	
+	
+	if($rows["newappdataElement"]=="wf7HrAnSFk1" && $rows["newcatoptioncombo"]=="yxyNpRFFT50")
+	{
+    $dl_wf7HrAnSFk1_yxyNpRFFT50=(int)$rows["value"];
+	}
+	if($rows["newappdataElement"]=="wf7HrAnSFk1" && $rows["newcatoptioncombo"]=="wFJYeroJT6C")
+	{
+    $dl_wf7HrAnSFk1_wFJYeroJT6C=(int)$rows["value"];
+	}
+	if($rows["newappdataElement"]=="wf7HrAnSFk1" && $rows["newcatoptioncombo"]=="JPcBzU4Z97x")
+	{
+    $dl_wf7HrAnSFk1_JPcBzU4Z97x=(int)$rows["value"];
+	}
+	if($rows["newappdataElement"]=="wf7HrAnSFk1" && $rows["newcatoptioncombo"]=="RfmlLqePpei")
+	{
+    $dl_wf7HrAnSFk1_RfmlLqePpei=(int)$rows["value"];
+	}
+	
+	
+	if($rows["newappdataElement"]=="GXQaAVsnddr" && $rows["newcatoptioncombo"]=="yxyNpRFFT50")
+	{
+    $dl_GXQaAVsnddr_yxyNpRFFT50=(int)$rows["value"];
+	}
+	if($rows["newappdataElement"]=="GXQaAVsnddr" && $rows["newcatoptioncombo"]=="wFJYeroJT6C")
+	{
+    $dl_GXQaAVsnddr_wFJYeroJT6C=(int)$rows["value"];
+	}
+	if($rows["newappdataElement"]=="GXQaAVsnddr" && $rows["newcatoptioncombo"]=="JPcBzU4Z97x")
+	{
+    $dl_GXQaAVsnddr_JPcBzU4Z97x=(int)$rows["value"];
+	}
+	if($rows["newappdataElement"]=="GXQaAVsnddr" && $rows["newcatoptioncombo"]=="RfmlLqePpei")
+	{
+    $dl_GXQaAVsnddr_RfmlLqePpei=(int)$rows["value"];
+	}
+	
+	
+	if($rows["newappdataElement"]=="VkQdXK52Pzr" && $rows["newcatoptioncombo"]=="yxyNpRFFT50")
+	{
+    $dl_VkQdXK52Pzr_yxyNpRFFT50=(int)$rows["value"];
+	}
+	if($rows["newappdataElement"]=="VkQdXK52Pzr" && $rows["newcatoptioncombo"]=="wFJYeroJT6C")
+	{
+    $dl_VkQdXK52Pzr_wFJYeroJT6C=(int)$rows["value"];
+	}
+	if($rows["newappdataElement"]=="VkQdXK52Pzr" && $rows["newcatoptioncombo"]=="JPcBzU4Z97x")
+	{
+    $dl_VkQdXK52Pzr_JPcBzU4Z97x=(int)$rows["value"];
+	}
+	if($rows["newappdataElement"]=="VkQdXK52Pzr" && $rows["newcatoptioncombo"]=="RfmlLqePpei")
+	{
+    $dl_VkQdXK52Pzr_RfmlLqePpei=(int)$rows["value"];
+	}
+	
+	
+	if($rows["newappdataElement"]=="vNqUnUYyu7f" && $rows["newcatoptioncombo"]=="yxyNpRFFT50")
+	{
+    $dl_vNqUnUYyu7f_yxyNpRFFT50=(int)$rows["value"];
+	}
+	if($rows["newappdataElement"]=="vNqUnUYyu7f" && $rows["newcatoptioncombo"]=="wFJYeroJT6C")
+	{
+    $dl_vNqUnUYyu7f_wFJYeroJT6C=(int)$rows["value"];
+	}
+	if($rows["newappdataElement"]=="vNqUnUYyu7f" && $rows["newcatoptioncombo"]=="JPcBzU4Z97x")
+	{
+    $dl_vNqUnUYyu7f_JPcBzU4Z97x=(int)$rows["value"];
+	}
+	if($rows["newappdataElement"]=="vNqUnUYyu7f" && $rows["newcatoptioncombo"]=="RfmlLqePpei")
+	{
+    $dl_vNqUnUYyu7f_RfmlLqePpei=(int)$rows["value"];
+	}
+	
+	
+	if($rows["newappdataElement"]=="wwtV53Uw1dR" && $rows["newcatoptioncombo"]=="fEAAWGsBGBl")
+	{
+    $dl_wwtV53Uw1dR_fEAAWGsBGBl=(int)$rows["value"];
+	}
+	if($rows["newappdataElement"]=="wwtV53Uw1dR" && $rows["newcatoptioncombo"]=="NiX6gQUV6zb")
+	{
+    $dl_wwtV53Uw1dR_NiX6gQUV6zb=(int)$rows["value"];
+	}
+	if($rows["newappdataElement"]=="wwtV53Uw1dR" && $rows["newcatoptioncombo"]=="xYVmfbB08tt")
+	{
+    $dl_wwtV53Uw1dR_xYVmfbB08tt=(int)$rows["value"];
+	}
+	if($rows["newappdataElement"]=="wwtV53Uw1dR" && $rows["newcatoptioncombo"]=="DQFYBKLmvYg")
+	{
+    $dl_wwtV53Uw1dR_DQFYBKLmvYg=(int)$rows["value"];
+	}
+	if($rows["newappdataElement"]=="wwtV53Uw1dR" && $rows["newcatoptioncombo"]=="EpTAIpLor4P")
+	{
+    $dl_wwtV53Uw1dR_EpTAIpLor4P=(int)$rows["value"];
+	}
+	if($rows["newappdataElement"]=="wwtV53Uw1dR" && $rows["newcatoptioncombo"]=="JFCztM7aJ3E")
+	{
+    $dl_wwtV53Uw1dR_JFCztM7aJ3E=(int)$rows["value"];
+	}
+	
+	
+	
+	if($rows["newappdataElement"]=="zFS1LQpnZVg" && $rows["newcatoptioncombo"]=="fEAAWGsBGBl")
+	{
+    $dl_zFS1LQpnZVg_fEAAWGsBGBl=(int)$rows["value"];
+	}
+	if($rows["newappdataElement"]=="zFS1LQpnZVg" && $rows["newcatoptioncombo"]=="NiX6gQUV6zb")
+	{
+    $dl_zFS1LQpnZVg_NiX6gQUV6zb=(int)$rows["value"];
+	}
+	if($rows["newappdataElement"]=="zFS1LQpnZVg" && $rows["newcatoptioncombo"]=="xYVmfbB08tt")
+	{
+    $dl_zFS1LQpnZVg_xYVmfbB08tt=(int)$rows["value"];
+	}
+	if($rows["newappdataElement"]=="zFS1LQpnZVg" && $rows["newcatoptioncombo"]=="DQFYBKLmvYg")
+	{
+    $dl_zFS1LQpnZVg_DQFYBKLmvYg=(int)$rows["value"];
+	}
+	if($rows["newappdataElement"]=="zFS1LQpnZVg" && $rows["newcatoptioncombo"]=="EpTAIpLor4P")
+	{
+    $dl_zFS1LQpnZVg_EpTAIpLor4P=(int)$rows["value"];
+	}
+	if($rows["newappdataElement"]=="zFS1LQpnZVg" && $rows["newcatoptioncombo"]=="JFCztM7aJ3E")
+	{
+    $dl_zFS1LQpnZVg_JFCztM7aJ3E=(int)$rows["value"];
+	}
+	
+	if($rows["newappdataElement"]=="TSvdKpV3GKZ" && $rows["newcatoptioncombo"]=="fEAAWGsBGBl")
+	{
+    $dl_TSvdKpV3GKZ_fEAAWGsBGBl=(int)$rows["value"];
+	}
+	if($rows["newappdataElement"]=="TSvdKpV3GKZ" && $rows["newcatoptioncombo"]=="NiX6gQUV6zb")
+	{
+    $dl_TSvdKpV3GKZ_NiX6gQUV6zb=(int)$rows["value"];
+	}
+	if($rows["newappdataElement"]=="TSvdKpV3GKZ" && $rows["newcatoptioncombo"]=="xYVmfbB08tt")
+	{
+    $dl_TSvdKpV3GKZ_xYVmfbB08tt=(int)$rows["value"];
+	}
+	if($rows["newappdataElement"]=="TSvdKpV3GKZ" && $rows["newcatoptioncombo"]=="DQFYBKLmvYg")
+	{
+    $dl_TSvdKpV3GKZ_DQFYBKLmvYg=(int)$rows["value"];
+	}
+	if($rows["newappdataElement"]=="TSvdKpV3GKZ" && $rows["newcatoptioncombo"]=="EpTAIpLor4P")
+	{
+    $dl_TSvdKpV3GKZ_EpTAIpLor4P=(int)$rows["value"];
+	}
+	if($rows["newappdataElement"]=="TSvdKpV3GKZ" && $rows["newcatoptioncombo"]=="JFCztM7aJ3E")
+	{
+    $dl_TSvdKpV3GKZ_JFCztM7aJ3E=(int)$rows["value"];
+	}
+	
+	
+	
+	
+	if($rows["newappdataElement"]=="s111WRt36gi" && $rows["newcatoptioncombo"]=="fEAAWGsBGBl")
+	{
+    $dl_s111WRt36gi_fEAAWGsBGBl=(int)$rows["value"];
+	}
+	if($rows["newappdataElement"]=="s111WRt36gi" && $rows["newcatoptioncombo"]=="NiX6gQUV6zb")
+	{
+    $dl_s111WRt36gi_NiX6gQUV6zb=(int)$rows["value"];
+	}
+	if($rows["newappdataElement"]=="s111WRt36gi" && $rows["newcatoptioncombo"]=="xYVmfbB08tt")
+	{
+    $dl_s111WRt36gi_xYVmfbB08tt=(int)$rows["value"];
+	}
+	if($rows["newappdataElement"]=="s111WRt36gi" && $rows["newcatoptioncombo"]=="DQFYBKLmvYg")
+	{
+    $dl_s111WRt36gi_DQFYBKLmvYg=(int)$rows["value"];
+	}
+	if($rows["newappdataElement"]=="s111WRt36gi" && $rows["newcatoptioncombo"]=="EpTAIpLor4P")
+	{
+    $dl_s111WRt36gi_EpTAIpLor4P=(int)$rows["value"];
+	}
+	if($rows["newappdataElement"]=="s111WRt36gi" && $rows["newcatoptioncombo"]=="JFCztM7aJ3E")
+	{
+    $dl_s111WRt36gi_JFCztM7aJ3E=(int)$rows["value"];
+	}
+	
+	
+	
+	
+	
+	
+}
+	
+	
+	$curls = curl_init();
+
+curl_setopt_array($curls, array(
+  CURLOPT_URL => 'https://icdmis.ncda.gov.rw/mis/api/dataValueSets?orgUnitIdScheme=code',
+  CURLOPT_RETURNTRANSFER => true,
+  CURLOPT_ENCODING => '',
+  CURLOPT_MAXREDIRS => 10,
+  CURLOPT_TIMEOUT => 0,
+  CURLOPT_FOLLOWLOCATION => true,
+  CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+  CURLOPT_CUSTOMREQUEST => 'POST',
+  CURLOPT_POSTFIELDS =>'{
+  "dataSet": "wPO0jcodgpk",
+  "completeDate": "'.$dates.'",
+  "period": "'.$periodid.'",
+  "orgUnit": "'.$orgUnit.'",
+  "dataValues": [
+    
+		   { 
+        "dataElement": "wf7HrAnSFk1",
+		"categoryOptionCombo": "yxyNpRFFT50",
+        "period": "'.$periodid.'",
+         "value": "'.$dl_wf7HrAnSFk1_yxyNpRFFT50.'"
+          }
+		  ,
+		   { 
+        "dataElement": "wf7HrAnSFk1",
+		"categoryOptionCombo": "wFJYeroJT6C",
+        "period": "'.$periodid.'",
+         "value": "'.$dl_wf7HrAnSFk1_wFJYeroJT6C.'"
+          }
+		   ,
+		   { 
+        "dataElement": "wf7HrAnSFk1",
+		"categoryOptionCombo": "JPcBzU4Z97x",
+        "period": "'.$periodid.'",
+         "value": "'.$dl_wf7HrAnSFk1_JPcBzU4Z97x.'"
+          }
+		  ,
+		   { 
+        "dataElement": "wf7HrAnSFk1",
+		"categoryOptionCombo": "RfmlLqePpei",
+        "period": "'.$periodid.'",
+         "value": "'.$dl_wf7HrAnSFk1_RfmlLqePpei.'"
+          }
+		  
+		  
+		    ,
+		   { 
+        "dataElement": "GXQaAVsnddr",
+		"categoryOptionCombo": "yxyNpRFFT50",
+        "period": "'.$periodid.'",
+         "value": "'.$dl_GXQaAVsnddr_yxyNpRFFT50.'"
+          }
+		    ,
+		   { 
+        "dataElement": "GXQaAVsnddr",
+		"categoryOptionCombo": "JPcBzU4Z97x",
+        "period": "'.$periodid.'",
+         "value": "'.$dl_GXQaAVsnddr_JPcBzU4Z97x.'"
+          }
+		   ,
+		   { 
+        "dataElement": "GXQaAVsnddr",
+		"categoryOptionCombo": "RfmlLqePpei",
+        "period": "'.$periodid.'",
+         "value": "'.$dl_GXQaAVsnddr_RfmlLqePpei.'"
+          }
+		   ,
+		   { 
+        "dataElement": "GXQaAVsnddr",
+		"categoryOptionCombo": "wFJYeroJT6C",
+        "period": "'.$periodid.'",
+         "value": "'.$dl_GXQaAVsnddr_wFJYeroJT6C.'"
+          }
+		  
+		
+		  
+		    ,
+		   { 
+        "dataElement": "VkQdXK52Pzr",
+		"categoryOptionCombo": "yxyNpRFFT50",
+        "period": "'.$periodid.'",
+         "value": "'.$dl_VkQdXK52Pzr_yxyNpRFFT50.'"
+          }
+		  ,
+		   { 
+        "dataElement": "VkQdXK52Pzr",
+		"categoryOptionCombo": "wFJYeroJT6C",
+        "period": "'.$periodid.'",
+         "value": "'.$dl_VkQdXK52Pzr_wFJYeroJT6C.'"
+          },
+		   { 
+        "dataElement": "VkQdXK52Pzr",
+		"categoryOptionCombo": "JPcBzU4Z97x",
+        "period": "'.$periodid.'",
+         "value": "'.$dl_VkQdXK52Pzr_JPcBzU4Z97x.'"
+          },
+		   { 
+        "dataElement": "VkQdXK52Pzr",
+		"categoryOptionCombo": "RfmlLqePpei",
+        "period": "'.$periodid.'",
+         "value": "'.$dl_VkQdXK52Pzr_RfmlLqePpei.'"
+          }
+		  
+		   ,
+		   { 
+        "dataElement": "vNqUnUYyu7f",
+		"categoryOptionCombo": "yxyNpRFFT50",
+        "period": "'.$periodid.'",
+         "value": "'.$dl_vNqUnUYyu7f_yxyNpRFFT50.'"
+          }
+		  ,
+		   { 
+        "dataElement": "vNqUnUYyu7f",
+		"categoryOptionCombo": "wFJYeroJT6C",
+        "period": "'.$periodid.'",
+         "value": "'.$dl_vNqUnUYyu7f_wFJYeroJT6C.'"
+          },
+		   { 
+        "dataElement": "vNqUnUYyu7f",
+		"categoryOptionCombo": "JPcBzU4Z97x",
+        "period": "'.$periodid.'",
+         "value": "'.$dl_vNqUnUYyu7f_JPcBzU4Z97x.'"
+          },
+		   { 
+        "dataElement": "vNqUnUYyu7f",
+		"categoryOptionCombo": "RfmlLqePpei",
+        "period": "'.$periodid.'",
+         "value": "'.$dl_vNqUnUYyu7f_RfmlLqePpei.'"
+          }
+		  
+		  
+		  ,
+		   { 
+        "dataElement": "wwtV53Uw1dR",
+		"categoryOptionCombo": "fEAAWGsBGBl",
+        "period": "'.$periodid.'",
+         "value": "'.$dl_wwtV53Uw1dR_fEAAWGsBGBl.'"
+          }
+		 ,
+		   { 
+        "dataElement": "wwtV53Uw1dR",
+		"categoryOptionCombo": "DQFYBKLmvYg",
+        "period": "'.$periodid.'",
+         "value": "'.$dl_wwtV53Uw1dR_DQFYBKLmvYg.'"
+          }
+		  ,
+		   { 
+        "dataElement": "wwtV53Uw1dR",
+		"categoryOptionCombo": "EpTAIpLor4P",
+        "period": "'.$periodid.'",
+         "value": "'.$dl_wwtV53Uw1dR_EpTAIpLor4P.'"
+          }
+		  ,
+		   { 
+        "dataElement": "wwtV53Uw1dR",
+		"categoryOptionCombo": "JFCztM7aJ3E",
+        "period": "'.$periodid.'",
+         "value": "'.$dl_wwtV53Uw1dR_JFCztM7aJ3E.'"
+          }
+		  
+		  
+		   ,
+		   { 
+        "dataElement": "zFS1LQpnZVg",
+		"categoryOptionCombo": "fEAAWGsBGBl",
+        "period": "'.$periodid.'",
+         "value": "'.$dl_zFS1LQpnZVg_fEAAWGsBGBl.'"
+          }
+		,
+		   { 
+        "dataElement": "zFS1LQpnZVg",
+		"categoryOptionCombo": "DQFYBKLmvYg",
+        "period": "'.$periodid.'",
+         "value": "'.$dl_zFS1LQpnZVg_DQFYBKLmvYg.'"
+          }
+		  ,
+		   { 
+        "dataElement": "zFS1LQpnZVg",
+		"categoryOptionCombo": "EpTAIpLor4P",
+        "period": "'.$periodid.'",
+         "value": "'.$dl_zFS1LQpnZVg_EpTAIpLor4P.'"
+          }
+		  ,
+		   { 
+        "dataElement": "zFS1LQpnZVg",
+		"categoryOptionCombo": "JFCztM7aJ3E",
+        "period": "'.$periodid.'",
+         "value": "'.$dl_zFS1LQpnZVg_JFCztM7aJ3E.'"
+          }
+		  
+		  
+		   ,
+		   { 
+        "dataElement": "TSvdKpV3GKZ",
+		"categoryOptionCombo": "fEAAWGsBGBl",
+        "period": "'.$periodid.'",
+         "value": "'.$dl_TSvdKpV3GKZ_fEAAWGsBGBl.'"
+          }
+		  ,
+		   { 
+        "dataElement": "TSvdKpV3GKZ",
+		"categoryOptionCombo": "DQFYBKLmvYg",
+        "period": "'.$periodid.'",
+         "value": "'.$dl_TSvdKpV3GKZ_DQFYBKLmvYg.'"
+          }
+		  ,
+		   { 
+        "dataElement": "TSvdKpV3GKZ",
+		"categoryOptionCombo": "EpTAIpLor4P",
+        "period": "'.$periodid.'",
+         "value": "'.$dl_TSvdKpV3GKZ_EpTAIpLor4P.'"
+          }
+		  ,
+		   { 
+        "dataElement": "TSvdKpV3GKZ",
+		"categoryOptionCombo": "JFCztM7aJ3E",
+        "period": "'.$periodid.'",
+         "value": "'.$dl_TSvdKpV3GKZ_JFCztM7aJ3E.'"
+          }
+		  
+		  
+		   ,
+		   { 
+        "dataElement": "s111WRt36gi",
+		"categoryOptionCombo": "fEAAWGsBGBl",
+        "period": "'.$periodid.'",
+         "value": "'.$dl_s111WRt36gi_fEAAWGsBGBl.'"
+          }
+		 ,
+		   { 
+        "dataElement": "s111WRt36gi",
+		"categoryOptionCombo": "DQFYBKLmvYg",
+        "period": "'.$periodid.'",
+         "value": "'.$dl_s111WRt36gi_DQFYBKLmvYg.'"
+          }
+		
+		  ,
+		   { 
+        "dataElement": "wwtV53Uw1dR",
+		"categoryOptionCombo": "NiX6gQUV6zb",
+        "period": "'.$periodid.'",
+         "value": "'.$dl_wwtV53Uw1dR_NiX6gQUV6zb.'"
+          }
+		  ,
+		   { 
+        "dataElement": "zFS1LQpnZVg",
+		"categoryOptionCombo": "NiX6gQUV6zb",
+        "period": "'.$periodid.'",
+         "value": "'.$dl_zFS1LQpnZVg_NiX6gQUV6zb.'"
+          }
+		  ,
+		   { 
+        "dataElement": "TSvdKpV3GKZ",
+		"categoryOptionCombo": "NiX6gQUV6zb",
+        "period": "'.$periodid.'",
+         "value": "'.$dl_TSvdKpV3GKZ_NiX6gQUV6zb.'"
+          }
+		  ,
+		   { 
+        "dataElement": "s111WRt36gi",
+		"categoryOptionCombo": "NiX6gQUV6zb",
+        "period": "'.$periodid.'",
+         "value": "'.$dl_s111WRt36gi_NiX6gQUV6zb.'"
+          },
+		    { 
+        "dataElement": "s111WRt36gi",
+		"categoryOptionCombo": "xYVmfbB08tt",
+        "period": "'.$periodid.'",
+         "value": "'.$dl_s111WRt36gi_xYVmfbB08tt.'"
+          }
+		  ,
+		   { 
+        "dataElement": "TSvdKpV3GKZ",
+		"categoryOptionCombo": "xYVmfbB08tt",
+        "period": "'.$periodid.'",
+         "value": "'.$dl_TSvdKpV3GKZ_xYVmfbB08tt.'"
+          },
+		  { 
+        "dataElement": "zFS1LQpnZVg",
+		"categoryOptionCombo": "xYVmfbB08tt",
+        "period": "'.$periodid.'",
+         "value": "'.$dl_zFS1LQpnZVg_xYVmfbB08tt.'"
+          }
+		   ,
+		   { 
+        "dataElement": "wwtV53Uw1dR",
+		"categoryOptionCombo": "xYVmfbB08tt",
+        "period": "'.$periodid.'",
+         "value": "'.$dl_wwtV53Uw1dR_xYVmfbB08tt.'"
+          }
+		  
+		  
+		   ,
+		   { 
+        "dataElement": "s111WRt36gi",
+		"categoryOptionCombo": "EpTAIpLor4P",
+        "period": "'.$periodid.'",
+         "value": "'.$dl_s111WRt36gi_EpTAIpLor4P.'"
+          }
+		 ,
+		   { 
+        "dataElement": "s111WRt36gi",
+		"categoryOptionCombo": "JFCztM7aJ3E",
+        "period": "'.$periodid.'",
+         "value": "'.$dl_s111WRt36gi_JFCztM7aJ3E.'"
+          }
+		 
+		  
+  ]
+}',
+  CURLOPT_HTTPHEADER => array(
+    'Authorization: Basic cGFzY2FsOktpZ2FsaUAyMDIw',
+    'Content-Type: application/json'
+  ),
+));
+
+/*
+$curls = curl_init();
+
+curl_setopt_array($curls, array(
+  CURLOPT_URL => 'https://online.hisprwanda.org/ecdmis/api/dataValueSets?orgUnitIdScheme=code',
+  CURLOPT_RETURNTRANSFER => true,
+  CURLOPT_ENCODING => '',
+  CURLOPT_MAXREDIRS => 10,
+  CURLOPT_TIMEOUT => 0,
+  CURLOPT_FOLLOWLOCATION => true,
+  CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+  CURLOPT_CUSTOMREQUEST => 'POST',
+  CURLOPT_POSTFIELDS =>'{
+  "dataSet": "wPO0jcodgpk",
+  "completeDate": "2023-01-12",
+  "period": "'.$periodid.'",
+  "orgUnit": "'.$orgUnit.'",
+  "dataValues": [
+		   { 
+        "dataElement": "s111WRt36gi",
+		"categoryOptionCombo": "xYVmfbB08tt",
+        "period": "'.$periodid.'",
+         "value": "'.$dl_s111WRt36gi_xYVmfbB08tt.'"
+          }
+		  ,
+		   { 
+        "dataElement": "TSvdKpV3GKZ",
+		"categoryOptionCombo": "xYVmfbB08tt",
+        "period": "'.$periodid.'",
+         "value": "'.$dl_TSvdKpV3GKZ_xYVmfbB08tt.'"
+          },
+		  { 
+        "dataElement": "zFS1LQpnZVg",
+		"categoryOptionCombo": "xYVmfbB08tt",
+        "period": "'.$periodid.'",
+         "value": "'.$dl_zFS1LQpnZVg_xYVmfbB08tt.'"
+          }
+		   ,
+		   { 
+        "dataElement": "wwtV53Uw1dR",
+		"categoryOptionCombo": "xYVmfbB08tt",
+        "period": "'.$periodid.'",
+         "value": "'.$dl_wwtV53Uw1dR_xYVmfbB08tt.'"
+          }
+		
+		  
+  ]
+}',
+  CURLOPT_HTTPHEADER => array(
+    'Authorization: Basic cGFzY2FsOktpZ2FsaUAyMDIw',
+    'Content-Type: application/json'
+  ),
+));
+$responses = curl_exec($curls);
+*/
+//echo $responses;
+$responses = curl_exec($curls);
+$datasdisps= json_decode($responses, true);
+$htpstats=@$datasdisps['status'];
+
+mysqli_query($conn,"update tbl_fbfintegrationlivedata  set status='$htpstats' where orgcode='$orgUnit' and periodid='$periodid' ");
+
+
+
+
+//echo "mytest<br/>";
+
+//echo $dl_s111WRt36gi_xYVmfbB08tt;
+//echo $dl_VkQdXK52Pzr_wFJYeroJT6C;
+//echo $dl_VkQdXK52Pzr_JPcBzU4Z97x;
+//echo $dl_VkQdXK52Pzr_RfmlLqePpei;
+
+
+
+}
+
+
+?>
