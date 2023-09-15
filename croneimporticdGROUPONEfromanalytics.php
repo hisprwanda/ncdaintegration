@@ -17,7 +17,7 @@ curl_setopt_array($curl, array(
   CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
   CURLOPT_CUSTOMREQUEST => 'GET',
   CURLOPT_HTTPHEADER => array(
-    'Authorization: Basic cGFzY2FsOktpZ2FsaUAyMDIw',
+    'Authorization: Basic xxxxxx',
     'Cookie: JSESSIONID=77748314683ABF45FB89E15891DBB294'
   ),
 ));
