@@ -11,5 +11,10 @@ A mapping of data elements is data showing the source and destination.
 DHIS2 instance source	Data element source	Org Unit source	DHIS2 instance destination	Data element destination	Org Unit destination
 HMIS	DataelementS1	OrgUnitS1	ICD	DataelementD1	OrgUnitD1
 SISCOM	DataelementS2	OrgUnitS1	ICD	DataelementD2	OrgUnitD1
-Organisation is mapped using organisation unit code.
+Organisation is mapped using organisation unit code.  mapping is in database table tbl_orgunit
+Note: codes in all systems must match for data to sync
+
+Data element mapping is in database table tbl_uidmapping,
+Note: Mapping is done using uids and data a pulled by data elements groups set in HMIS, if any change in HMIS is done like adding new data elements, it has to be added in the mapping table.
+
 
