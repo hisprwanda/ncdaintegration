@@ -569,7 +569,7 @@ curl_setopt_array($curls, array(
   ]
 }',
   CURLOPT_HTTPHEADER => array(
-    'Authorization: Basic cGFzY2FsOktpZ2FsaUAyMDIw',
+    'Authorization: Basic xxxxxxxx',
     'Content-Type: application/json'
   ),
 ));
@@ -623,7 +623,7 @@ curl_setopt_array($curls, array(
   ]
 }',
   CURLOPT_HTTPHEADER => array(
-    'Authorization: Basic cGFzY2FsOktpZ2FsaUAyMDIw',
+    'Authorization: Basic xxxxxx',
     'Content-Type: application/json'
   ),
 ));
